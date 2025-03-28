@@ -256,7 +256,4 @@ def profile():
     user = session.get("user")
     if not user:
         return redirect(url_for("google_login"))  # Redirect to Google login
-    return jsonify(user)
-
-if __name__ == "__main__":
-    app.run(debug=True)        
+    return jsonify(user)   
